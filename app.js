@@ -1,5 +1,5 @@
-// 1. express 모듈 가져오기
-const express = require('express');
+// 1. express 모듈 가져오기 (import 사용)
+import express from 'express';
 
 // 2. express 앱 생성
 const app = express();
@@ -9,7 +9,7 @@ const port = 3000;
 
 // 4. GET 요청 처리 (루트 경로: '/')
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Hello World with ES Modules!');
 });
 
 // 5. 서버 실행 및 대기
